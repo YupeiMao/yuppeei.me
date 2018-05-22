@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Yupei Neil Mao</title>
+        <title>Neil Mao</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
- 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
         <style>
             body, html {
                 height: 100%;
                 margin: 0;}
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            ::selection{
+                color:white;
+                background: black;
+            }
+            
             /*Setting background page image*/
             .main-img{  
                 background-image: url("/images/myp.png");
+                background-repeat: no-repeat;
+                background-position: center;
                 background-attachment: fixed;
                 height: 100%; 
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;}
+                background-size: cover;
+            }
             
-         
             .logo{
                 position: absolute;
-                left: 45%;
-                top: 35%;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
                 width: 7vw;
-
+                border-radius:23px;
                 /*text-align: center;
                 font: 400 8vw/1.5 'Arizonia', Helvetica, sans-serif;
                 color: #ffffff;
                 text-shadow: 5px 5px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
                 text-decoration:none;*/
-                
             }
+            
             /*Setting navi bar*/
             ul{
                 position: absolute;/*Setting it on top of image*/
@@ -42,30 +54,38 @@
                 margin:0;
                 padding:0;
                 overflow: hidden;
-                background-color:rgba(255,255,255,0);}
+                background-color:rgba(255,255,255,0);
+            }
+            
             li{ 
-                float:left;}
-        
-            li a{
-                font-family: "Source Sans Pro", "Arial", sans-serif;
+                float:left;
+            }
+            
+            .nav{
+                font-family: 'PT Sans', sans-serif;
                 font-size:1.5vw;
                 
-                display: block;
+                display: inline-block;
                 padding: 1vw 1.5vw;
                 color:white;
                 text-align: center;
-                text-decoration:none;}
-            .nav:hover{background-color:rgba(255,255,255,0.3);}
+                text-decoration:none;
+            }
+            
+            .nav:hover{
+                border-bottom: 2px solid rgba(255,255,255,0.8);
+            }
         
             .about{
                 height: 100%;
-                background-color: antiquewhite;
+                background-color:floralwhite;
                 text-align: center;
             }
         </style>
     </head>
     
     <body>
+        <div class="main-img"></div>
         <a  href="#Home"><img class="logo" src="/images/yupei.png" alt=""></a>
         <ul>
             <li><a class="nav" href="#Home">Home</a></li>
@@ -73,7 +93,7 @@
             <li><a class="nav" href="#About">About</a></li>
             <li><a class="nav" href="#Contact">Contact</a></li>
         </ul>
-        <div class="main-img"></div>
+        
         <div class="about">
             <h2>About me</h2>
             <p>I am your almighty savior, hire me now or you will regret, moron.</p>
